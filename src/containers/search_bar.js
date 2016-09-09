@@ -11,6 +11,7 @@ class SearchBar extends Component {
 
     this.onInputChange = this.onInputChange.bind(this);
     //we are binding 'this' to SearchBar
+    this.onFormSubmit = this.onFormSubmit.bind(this);
   }
 
   onInputChange(event) {
@@ -21,6 +22,8 @@ class SearchBar extends Component {
     event.preventDefault();
     //don't submit the form
     //we need to go and fetch weather data
+    this.props.fetchWeather(this.state.term);
+    this.setState({ term: '' });
 
   }
 
