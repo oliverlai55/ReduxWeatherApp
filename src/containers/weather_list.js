@@ -12,6 +12,7 @@ class WeatherList extends Component {
     const { lon, lat } = cityData.city.coord;
     //this is the same as getting cityData.city.coord.lon and .lat
 
+
     return (
       <tr key={name}>
         <td><GoogleMap lon={lon} lat={lat} /></td>
