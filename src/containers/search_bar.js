@@ -11,6 +11,8 @@ class SearchBar extends Component {
 
     this.onInputChange = this.onInputChange.bind(this);
     //we are binding 'this' to SearchBar
+    //When we pass callback, and makes the reference to "this" is here, it won't know what "this" is.  So this has to be bind to the context of onInputChange function
+
     this.onFormSubmit = this.onFormSubmit.bind(this);
   }
 
