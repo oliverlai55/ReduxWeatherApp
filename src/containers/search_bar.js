@@ -47,7 +47,8 @@ class SearchBar extends Component {
 
 function mapDispatchToProps(dispatch) {
   return bindActionCreators({ fetchWeather }, dispatch);
-  //causes action creator with dispatch, action flows down to middleware
+  //causes action creator with dispatch, action flows down to middleware, and then the reducer
 }
 
 export default connect(null, mapDispatchToProps)(SearchBar);
+// first param is null because the DispatchToProps has to be the 2nd argument.  The first one is mapStateToProps
