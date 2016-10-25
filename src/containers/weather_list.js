@@ -12,7 +12,6 @@ class WeatherList extends Component {
     const { lon, lat } = cityData.city.coord;
     //this is the same as getting cityData.city.coord.lon and .lat
 
-
     return (
       <tr key={name}>
         <td><GoogleMap lon={lon} lat={lat} /></td>
@@ -43,7 +42,10 @@ class WeatherList extends Component {
 }
 
 function mapStateToProps({ weather }) {
+
   //const weather = state.weather
+  // We are using weather because we assigned the name weather in weather reducer
+
   return { weather }; // {weather} === {weather: weather}
 }
 

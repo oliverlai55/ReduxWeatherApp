@@ -17,3 +17,5 @@ export default (props) => {
     </div>
   );
 }
+
+//This component is only used for rendering the Spaklines charts
