@@ -42,7 +42,7 @@ class WeatherList extends Component {
 }
 
 function mapStateToProps({ weather }) {
-
+  //Purpose is to take our application state as an argument
   //const weather = state.weather
   // We are using weather because we assigned the name weather in weather reducer
 
@@ -50,3 +50,4 @@ function mapStateToProps({ weather }) {
 }
 
 export default connect(mapStateToProps)(WeatherList);
+// Connects takes in function AND the component and makes it into a container
