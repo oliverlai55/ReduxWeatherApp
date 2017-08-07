@@ -20,7 +20,8 @@ export function fetchWeather(city) {
 
 //Redux-Promise is a middleware package for Redux, it handles Ajax request for this app.
 
-// The action creator returns a 'Type'
+// The action creator returns a 'Type', it is an object with 'type' property
+// We also have a "payload", a piece of action that describes
 
 //Axios is used for making Ajax calls
 
