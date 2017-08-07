@@ -45,6 +45,7 @@ function mapStateToProps({ weather }) {
   //Purpose is to take our application state as an argument
   //const weather = state.weather
   // We are using weather because we assigned the name weather in weather reducer
+  // If our state changes, the container will re render will a new list of books
 
   return { weather }; // {weather} === {weather: weather}
 }
